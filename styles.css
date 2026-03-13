@@ -1,1 +1,25 @@
-/*  your css code here. If applicable */
+body{
+background: linear-gradient(to right,#8e44ad,#9b59b6);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+#buttons{
+display:flex;
+gap:20px;
+}
+
+button{
+padding:12px 20px;
+border:none;
+background:#6c3483;
+color:white;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+opacity:0.8;
+}
