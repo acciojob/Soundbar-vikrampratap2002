@@ -1,25 +1,27 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-	<section id="buttons">
-		<button class="btn" onclick="playSound('applause')">applause</button>
-		<button class="btn" onclick="playSound('boo')">boo</button>
-		<button class="btn" onclick="playSound('gasp')">gasp</button>
-		<button class="btn" onclick="playSound('tada')">tada</button>
-		<button class="btn" onclick="playSound('victory')">victory</button>
-		<button class="btn" onclick="playSound('wrong')">wrong</button>
-		<button class="stop" onclick="stopSound()">stop</button>
-		
-	</section>
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<section id="buttons">
+
+<button class="btn" onclick="playSound('applause')">applause</button>
+<button class="btn" onclick="playSound('boo')">boo</button>
+<button class="btn" onclick="playSound('gasp')">gasp</button>
+<button class="btn" onclick="playSound('tada')">tada</button>
+<button class="btn" onclick="playSound('victory')">victory</button>
+<button class="btn" onclick="playSound('wrong')">wrong</button>
+<button class="stop" onclick="stopSound()">stop</button>
+
+</section>
+
+<audio id="audio"></audio>
+
+<script src="./script.js"></script>
 
 </body>
 
