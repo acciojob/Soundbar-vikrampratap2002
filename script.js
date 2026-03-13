@@ -1,36 +1,20 @@
-//your JS code here. If required.
-let sounds = [
-"applause",
-"boo",
-"gasp",
-"tada",
-"victory",
-"wrong"
-]
+let audio = null;
 
-let currentAudio = null
+function playSound(name) {
 
-document.querySelectorAll(".btn").forEach((btn,index)=>{
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
 
-btn.addEventListener("click",()=>{
-
-if(currentAudio){
-currentAudio.pause()
+    audio = new Audio("sounds/" + name + ".mp3");
+    audio.play();
 }
 
-currentAudio = new Audio("sounds/"+sounds[index]+".mp3")
+function stopSound() {
 
-currentAudio.play()
-
-})
-
-})
-
-document.querySelector(".stop").addEventListener("click",()=>{
-
-if(currentAudio){
-currentAudio.pause()
-currentAudio.currentTime = 0
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
 }
-
-})
